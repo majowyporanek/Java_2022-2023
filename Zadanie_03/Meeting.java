@@ -6,8 +6,9 @@ public class Meeting implements MeetingInterface {
     private Position meetingPoint;
     private List<PawnPosition>myPositions;
     private Map<Integer, PawnPosition>myMappedPositions = new HashMap<>();
-    private int moveCounter;
-    public int changes;
+    public PawnPosition newPos = new PawnPosition2D(-1,-1,-1);
+    public int movedCount;
+    public boolean moved;
 
     public Map<Integer, PawnPosition> addPawnsToHashMap(List<PawnPosition> positions){
         Map<Integer, PawnPosition> updatedMap = new HashMap<>();
@@ -25,10 +26,6 @@ public class Meeting implements MeetingInterface {
         return Math.abs(meetingPoint.y()- pos.y());
     }
 
-    public void actualizeMyPos(List<PawnPosition> positions){
-        myPositions = new ArrayList<>(positions);
-    }
-
     @Override
     public void addPawns(List<PawnPosition> positions) {
         myPositions = new ArrayList<>(positions);
@@ -39,66 +36,85 @@ public class Meeting implements MeetingInterface {
         meetingPoint = new Position2D(meetingPointPosition.x(), meetingPointPosition.y());
     }
 
-    public PawnPosition onePawnMove(PawnPosition pos){
-        int dx, dy;
-        PawnPosition movedPawn = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y()); // na poczatku nie wiemy czy bedziemy ruszac
-        dx = dx(pos);
-        dy = dy(pos);
-        if((dx == 0) && (dy == 0)){
-           return movedPawn;
-        }
-
-        if(dx > dy) {
-           return (meetingPoint.x() > pos.x()) ? new PawnPosition2D(pos.pawnId(), pos.x() + 1, pos.y()) : new PawnPosition2D(pos.pawnId(), pos.x()-1, pos.y() );
-        }else {
-            return (meetingPoint.y()> pos.y()) ? new PawnPosition2D(pos.pawnId(), pos.x(), pos.y()+1) : new PawnPosition2D(pos.pawnId(), pos.x(), pos.y()-1);
-        }
-    }
-
-    public List<PawnPosition>actualMove(PawnPosition pos){
-        List<PawnPosition> actualizedList = new ArrayList<>();
-        Set<PawnPosition>currentN = this.getNeighbours(pos.pawnId());
-        for(PawnPosition current : myPositions){
-            if(current.equals(pos)){
-               if(canPawnMove(currentN, onePawnMove(pos))) {
-                   this.changes++;
-                   actualizedList.add(onePawnMove(pos));
-               }else {
-                   actualizedList.add(current);
-               }
-            }
-        }
-        return new ArrayList<>(actualizedList);
-    }
-
-    public boolean canPawnMove(Set<PawnPosition>neighbours, PawnPosition pos){
-        for(PawnPosition n : neighbours) {
-            int xN, yN, posX, posY;
-            xN = n.x();
-            yN = n.y();
-            posX = pos.x();
-            posY = pos.y();
-
-            if((xN == posX) && yN == posY){
+    public boolean canMove(PawnPosition pos) {
+        for(PawnPosition el : myPositions) {
+            if(el.x() == pos.x() && el.y() == pos.y()){
                 return false;
             }
         }
         return true;
     }
 
-    private boolean canIMove(PawnPosition pos){
-        Set<PawnPosition>actualSet = new HashSet<>(this.getAllPawns());
-        actualSet.add(pos);
-        return this.getAllPawns().size() < actualSet.size();
+    public void moveToX(PawnPosition pos) {
+        List<PawnPosition>actualPositions = new ArrayList<>();
+
+        if(meetingPoint.x() > pos.x()) {
+            newPos = new PawnPosition2D(pos.pawnId(), pos.x() + 1, pos.y());
+        }
+
+        if(meetingPoint.x() < pos.x()) {
+            newPos = new PawnPosition2D(pos.pawnId(), pos.x() -1, pos.y());
+        }
+
+        for(PawnPosition el: myPositions) {
+            if(el.equals(pos) && canMove(newPos)){
+                actualPositions.add(newPos);
+                movedCount ++;
+            } else {
+                actualPositions.add(el);
+            }
+        }
+        myPositions = new ArrayList<>(actualPositions);
     }
 
+    public void moveToY(PawnPosition pos){
+        List<PawnPosition>actualPositions = new ArrayList<>();
+
+        if(meetingPoint.y() > pos.y()) {
+            newPos = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y() + 1);
+        }
+
+        if(meetingPoint.y() < pos.y()) {
+            newPos = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y()-1);
+        }
+
+        for(PawnPosition el: myPositions) {
+            if(el.equals(pos) && canMove(newPos)){
+                actualPositions.add(newPos);
+                movedCount++;
+            } else {
+                actualPositions.add(el);
+            }
+        }
+        myPositions = new ArrayList<>(actualPositions);
+    }
+    public int oneMove() {
+        for(PawnPosition el : myPositions){
+            //ruch:
+            movedCount = 0;
+            int dx = dx(el);
+            int dy = dy(el);
+
+            if(dx == 0 && dy == 0){
+
+            }else {
+                if (dx > dy) {
+                    moveToX(el);
+                }
+                if (dy >= dx) {
+                    moveToY(el);
+                }
+            }
+        }
+
+        return movedCount;
+    }
     @Override
     public void move() {
-        while(this.changes != 0) {
-            this.changes = 0;
-            for (PawnPosition position : myPositions) {
-                myPositions = new ArrayList<>(actualMove(position));
-            }
+        moved = true;
+
+        while(moved){
+            moved = (oneMove() == 0) ? false : true;
             Collections.reverse(myPositions);
         }
     }
