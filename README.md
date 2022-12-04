@@ -1,6 +1,5 @@
 # Java-zaj-cia-2022
 
-Zadanie 03 termin III. Do zdobycia maksymalnie: 1.0pkt.
 Ida zadania
 W zadaniu pojawi się wiele pionków, które będą poruszać się w kierunku wspólnego dla wszystkich pojedynczego punktu zbornego.
 
