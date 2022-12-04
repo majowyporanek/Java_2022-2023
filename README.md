@@ -14,11 +14,13 @@ W turach nieparzystych ruch pionków realizowany jest od początku do końca lis
 Ruch jednego pionka
 Pojedynczy ruch pojedynczego pionka realizowany jest wg. schematu
 
-wyliczamy dx, dy - różnicę w położeniu X, Y pionka w stosunku do położenia punktu zbornego
-jeśli |dx| > |dy| wykonujemy ruch w kierunku X o ile jest on możliwy (*)
-jeśli |dx| <= |dy| wykonujemy ruch w kierunku Y o ile jest on możliwy (*)
-jeśli |dx| = |dy| = 0 - brak ruchu, bo pionek dotarł do punktu zbornego
-ruch pionka zawsze realizowany jest w kierunku punktu zbornego
+1. wyliczamy dx, dy - różnicę w położeniu X, Y pionka w stosunku do położenia punktu zbornego
+2. jeśli |dx| > |dy| wykonujemy ruch w kierunku X o ile jest on możliwy (*)
+3. jeśli |dx| <= |dy| wykonujemy ruch w kierunku Y o ile jest on możliwy (*)
+4. jeśli |dx| = |dy| = 0 - brak ruchu, bo pionek dotarł do punktu zbornego
+5. ruch pionka zawsze realizowany jest w kierunku punktu zbornego
+
+***
 w jednym ruchu zmianie ulega tylko jedna współrzędna położenia pionka.
 długość pojedynczego kroku pionka to 1 lub 0
 Najważniejsza zasada (*): na jednym polu planszy może znajdować się tylko jeden pionek. Pionki będą się więc wzajemnie blokować w marszu do punktu zbornego. UWAGA: to, że pionek nie poruszył się w danej turze, nie oznacza, że nie może poruszyć się w turze kolejnej.
