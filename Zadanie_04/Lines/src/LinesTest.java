@@ -124,9 +124,9 @@ public class LinesTest {
         lines.addSegments(segments);
 
         var actual = this.lines.findConnection(A, F);
-        var expected = new ArrayList<>(List.of(AC, CD, DE, EF));
+//        var expected = new ArrayList<>(List.of(AC, CD, DE, EF));
         // second solution
-        // var expected = new ArrayList<>(List.of(AB, BC, CD, DE, EF));
+         var expected = new ArrayList<>(List.of(AB, BC, CD, DE, EF));
 
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
