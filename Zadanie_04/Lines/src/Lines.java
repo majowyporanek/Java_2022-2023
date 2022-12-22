@@ -67,6 +67,9 @@ public class Lines implements LinesInterface{
     }
 
     void findPath(Point current, Point target){
+        if(!graph.containsKey(current)|| !graph.containsKey(target)){
+            return;
+        }
         if(current.equals(target)){
             currentPaths.add(current);
             paths.add(new LinkedList<>(currentPaths));
@@ -96,10 +99,12 @@ public class Lines implements LinesInterface{
         currentPaths = new LinkedList<>();
 
         findPath(startPoint, destination);
-        int n = paths.get(0).size();
-        for(int i = 0; i<(n-1); i++){
-            Segment newSegment = new SegmentRecord(paths.get(0).get(i), paths.get(0).get(i+1));
-            simpleConnection.add(newSegment);
+        if(paths.size() != 0) {
+            int n = paths.get(0).size();
+            for (int i = 0; i < (n - 1); i++) {
+                Segment newSegment = new SegmentRecord(paths.get(0).get(i), paths.get(0).get(i + 1));
+                simpleConnection.add(newSegment);
+            }
         }
         return simpleConnection;
     }
