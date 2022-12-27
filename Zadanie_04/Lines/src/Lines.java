@@ -7,6 +7,7 @@ public class Lines implements LinesInterface{
     private Map<Point, Boolean>visited = new HashMap<>();
     private List<List<Point>> paths; // zapamietywanie sciezek
     private List<Point>currentPaths;
+    private Map<Point, Map<Integer, Set<Point>>>reachableEndPoints;
 
     private record PointRecord(String name) implements Point{
         @Override
@@ -116,6 +117,75 @@ public class Lines implements LinesInterface{
 
     @Override
     public Map<Point, Map<Integer, Set<Point>>> getReachableEndpoints() {
-        return null;
+        initializeReachableEndPointsMap();
+
+        for(Point start : graph.keySet()){
+            for(Point end: graph.keySet()){
+                if(start.equals(end) == false){
+                    initializeVisited();
+//                    System.out.println(visited);
+                    List<Point>pathsList = new ArrayList<>();
+                    pathsList.add(start);
+                    allSimplePaths(start, end, pathsList);
+                }
+            }
+        }
+
+        return reachableEndPoints;
     }
+
+    // to get reachableEndPoints -> dfs based solution
+
+    public boolean checkConnection(Point a, Point b){
+        return graph.get(a).contains(b);
+    }
+
+    public void allSimplePaths(Point p, Point d, List<Point>currentPoints){
+        if(p.equals(d)){
+//            System.out.println(currentPoints);
+            addPathToMap(currentPoints);
+            return;
+        }
+
+        visited.replace(p, true);
+
+        for(Point point : graph.get(p)){
+            if(!visited.get(point)){
+                currentPoints.add(point);
+                allSimplePaths(point, d, currentPoints);
+
+                currentPoints.remove(point);
+            }
+        }
+        visited.replace(p, false);
+    }
+
+    public void addPathToMap(List<Point>path){
+        int sizeOfPath = path.size() - 1;
+//        System.out.println(path);
+        if(sizeOfPath >=1 && sizeOfPath <= 4){
+            reachableEndPoints.get(path.get(0)).get(sizeOfPath).add(path.get(path.size()-1));
+        }
+    }
+
+
+    void initializeReachableEndPointsMap(){
+        reachableEndPoints = new HashMap<>();
+//        for(Point p : graph.keySet()){
+//            reachableEndPoints.put(p, new HashMap<>());
+//        }
+        Map<Integer, Set<Point>>innerMap = new HashMap<>();
+        for(Point p: graph.keySet()) {
+            reachableEndPoints.put(p, new HashMap<>());
+            for (int i = 1; i < 5; i++) {
+                Set<Point> innerSet = new HashSet<>();
+//                innerMap = new HashMap<>();
+//                innerMap.put(i, innerSet);
+                reachableEndPoints.get(p).put(i,innerSet);
+            }
+        }
+
+    }
+
+
 }
