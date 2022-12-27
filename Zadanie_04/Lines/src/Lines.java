@@ -5,7 +5,7 @@ public class Lines implements LinesInterface{
     private Map<Point, List<Point>> graph = new HashMap<>();
     private Set<Point>vertexes = new HashSet<>();
     private Map<Point, Boolean>visited = new HashMap<>();
-    private List<List<Point>> paths; // zapamietywanie sciezek
+    private List<List<Point>> paths;
     private List<Point>currentPaths;
     private Map<Point, Map<Integer, Set<Point>>>reachableEndPoints;
     private Map<Point, Set<Segment>>endpointsToSegments;
@@ -41,18 +41,17 @@ public class Lines implements LinesInterface{
     @Override
     public void addSegments(Set<Segment> segments) {
         for(Segment s:segments){
-            Segment currentSegment = new SegmentRecord(s.getEndpoint1(), s.getEndpoint2());
             Point key1 = new PointRecord(s.getEndpoint1().getName());
             Point key2 = new PointRecord(s.getEndpoint2().getName());
 
 
-            if(!graph.containsKey(key1)){
-                System.out.println("Doesnt contain such a key");
-            }
-
-            if(!graph.containsKey(key2)){
-                System.out.println("Doesnt contain such a key");
-            }
+//            if(!graph.containsKey(key1)){
+//                System.out.println("Doesnt contain such a key");
+//            }
+//
+//            if(!graph.containsKey(key2)){
+//                System.out.println("Doesnt contain such a key");
+//            }
 
             graph.get(key1).add(key2);
             graph.get(key2).add(key1);
@@ -119,17 +118,13 @@ public class Lines implements LinesInterface{
 
     @Override
     public Map<Point, Set<Segment>> getMapEndpointToSegments() {
-        Set<Segment>segments = new HashSet<>();
         initializeEndpointsToSegments();
 
         for(Point p1 : graph.keySet()){
             for(Point adj : graph.get(p1)){
-//                segments.add(new SegmentRecord(p1, adj));
-//                segments.add(new SegmentRecord(adj, p1));
                 endpointsToSegments.get(p1).add(new SegmentRecord(p1, adj));
             }
         }
-
         return endpointsToSegments;
     }
 
@@ -151,10 +146,6 @@ public class Lines implements LinesInterface{
         return reachableEndPoints;
     }
 
-
-    public boolean checkConnection(Point a, Point b){
-        return graph.get(a).contains(b);
-    }
 
     public void allSimplePaths(Point p, Point d, List<Point>currentPoints){
         if(p.equals(d)){
@@ -195,6 +186,4 @@ public class Lines implements LinesInterface{
         }
 
     }
-
-
 }
