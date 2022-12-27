@@ -8,6 +8,7 @@ public class Lines implements LinesInterface{
     private List<List<Point>> paths; // zapamietywanie sciezek
     private List<Point>currentPaths;
     private Map<Point, Map<Integer, Set<Point>>>reachableEndPoints;
+    private Map<Point, Set<Segment>>endpointsToSegments;
 
     private record PointRecord(String name) implements Point{
         @Override
@@ -56,7 +57,6 @@ public class Lines implements LinesInterface{
             graph.get(key1).add(key2);
             graph.get(key2).add(key1);
         }
-//        System.out.println(graph.size());
     }
 
     void initializeVisited(){
@@ -110,9 +110,27 @@ public class Lines implements LinesInterface{
         return simpleConnection;
     }
 
+    public void initializeEndpointsToSegments() {
+        endpointsToSegments = new HashMap<>();
+        for(Point p : graph.keySet()){
+            endpointsToSegments.put(p, new HashSet<>());
+        }
+    }
+
     @Override
     public Map<Point, Set<Segment>> getMapEndpointToSegments() {
-        return null;
+        Set<Segment>segments = new HashSet<>();
+        initializeEndpointsToSegments();
+
+        for(Point p1 : graph.keySet()){
+            for(Point adj : graph.get(p1)){
+//                segments.add(new SegmentRecord(p1, adj));
+//                segments.add(new SegmentRecord(adj, p1));
+                endpointsToSegments.get(p1).add(new SegmentRecord(p1, adj));
+            }
+        }
+
+        return endpointsToSegments;
     }
 
     @Override
@@ -123,7 +141,6 @@ public class Lines implements LinesInterface{
             for(Point end: graph.keySet()){
                 if(start.equals(end) == false){
                     initializeVisited();
-//                    System.out.println(visited);
                     List<Point>pathsList = new ArrayList<>();
                     pathsList.add(start);
                     allSimplePaths(start, end, pathsList);
@@ -134,7 +151,6 @@ public class Lines implements LinesInterface{
         return reachableEndPoints;
     }
 
-    // to get reachableEndPoints -> dfs based solution
 
     public boolean checkConnection(Point a, Point b){
         return graph.get(a).contains(b);
@@ -142,7 +158,6 @@ public class Lines implements LinesInterface{
 
     public void allSimplePaths(Point p, Point d, List<Point>currentPoints){
         if(p.equals(d)){
-//            System.out.println(currentPoints);
             addPathToMap(currentPoints);
             return;
         }
@@ -162,7 +177,6 @@ public class Lines implements LinesInterface{
 
     public void addPathToMap(List<Point>path){
         int sizeOfPath = path.size() - 1;
-//        System.out.println(path);
         if(sizeOfPath >=1 && sizeOfPath <= 4){
             reachableEndPoints.get(path.get(0)).get(sizeOfPath).add(path.get(path.size()-1));
         }
@@ -171,16 +185,11 @@ public class Lines implements LinesInterface{
 
     void initializeReachableEndPointsMap(){
         reachableEndPoints = new HashMap<>();
-//        for(Point p : graph.keySet()){
-//            reachableEndPoints.put(p, new HashMap<>());
-//        }
         Map<Integer, Set<Point>>innerMap = new HashMap<>();
         for(Point p: graph.keySet()) {
             reachableEndPoints.put(p, new HashMap<>());
             for (int i = 1; i < 5; i++) {
                 Set<Point> innerSet = new HashSet<>();
-//                innerMap = new HashMap<>();
-//                innerMap.put(i, innerSet);
                 reachableEndPoints.get(p).put(i,innerSet);
             }
         }
