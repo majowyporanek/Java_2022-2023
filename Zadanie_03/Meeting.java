@@ -4,11 +4,14 @@ import java.lang.Integer;
 //musze aktualizowac moje pozycje na biezaco pionse
 public class Meeting implements MeetingInterface {
     private Position meetingPoint;
-    private List<PawnPosition>myPositions;
+    private List<PawnPosition>myPositions = new ArrayList<>();
     private Map<Integer, PawnPosition>myMappedPositions = new HashMap<>();
     public PawnPosition newPos = new PawnPosition2D(-1,-1,-1);
-    public int movedCount;
+    public int movedCount = 1;
     public boolean moved;
+    private int moves;
+    private int actualMove;
+    private Position searchedPos = new PawnPosition2D(-1,-1,-1);
 
     public Map<Integer, PawnPosition> addPawnsToHashMap(List<PawnPosition> positions){
         Map<Integer, PawnPosition> updatedMap = new HashMap<>();
@@ -18,6 +21,9 @@ public class Meeting implements MeetingInterface {
         return new HashMap<>(updatedMap);
     }
 
+    public boolean doesMeetingsPointChanged(Position pos) {
+        return true;
+    }
     public int dx(PawnPosition pos){
         return Math.abs(meetingPoint.x()-pos.x());
     }
@@ -38,7 +44,7 @@ public class Meeting implements MeetingInterface {
 
     public boolean canMove(PawnPosition pos) {
         for(PawnPosition el : myPositions) {
-            if(el.x() == pos.x() && el.y() == pos.y()){
+            if((el.x() == pos.x()) && (el.y() == pos.y())){
                 return false;
             }
         }
@@ -71,7 +77,7 @@ public class Meeting implements MeetingInterface {
         List<PawnPosition>actualPositions = new ArrayList<>();
 
         if(meetingPoint.y() > pos.y()) {
-            newPos = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y() + 1);
+            newPos = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y()+1);
         }
 
         if(meetingPoint.y() < pos.y()) {
@@ -89,33 +95,42 @@ public class Meeting implements MeetingInterface {
         myPositions = new ArrayList<>(actualPositions);
     }
     public int oneMove() {
+        movedCount = 0;
         for(PawnPosition el : myPositions){
             //ruch:
-            movedCount = 0;
             int dx = dx(el);
             int dy = dy(el);
 
-            if(dx == 0 && dy == 0){
+            if((dx == 0) && (dy == 0)){
 
             }else {
                 if (dx > dy) {
                     moveToX(el);
                 }
-                if (dy >= dx) {
+                if(dy>=dx){
                     moveToY(el);
                 }
             }
         }
-
+        Collections.reverse(myPositions);
         return movedCount;
     }
     @Override
     public void move() {
         moved = true;
-
-        while(moved){
-            moved = (oneMove() == 0) ? false : true;
-            Collections.reverse(myPositions);
+        moves = 0;
+        actualMove = 0;
+        int j = 0;
+        while(movedCount !=0){
+//            moved = (oneMove() == 0) ? false : true;
+//            Collections.reverse(myPositions);
+            moves++;
+            actualMove = oneMove();
+//            Collections.reverse(myPositions);
+            if(actualMove == 0){
+                j++;
+            }
+            moved = j==3 ? false : true;
         }
     }
 
@@ -126,14 +141,46 @@ public class Meeting implements MeetingInterface {
 
     @Override
     public Set<PawnPosition> getNeighbours(int pawnId) {
-        myMappedPositions = addPawnsToHashMap(myPositions);
-        Position searchedPos = myMappedPositions.get(pawnId);
-        Set<PawnPosition>neighbours = new HashSet<>();
+//        myMappedPositions = addPawnsToHashMap(myPositions);
 
+//        Position searchedPos = myMappedPositions.get(pawnId)
+//
+//        for(PawnPosition pos : myPositions) {
+//            if(pos.pawnId() == pawnId){
+//                searchedPos = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y());
+//            }
+//        }
+//        Set<PawnPosition>neighbours = new HashSet<>();
+//
+//        for(PawnPosition pos : myPositions){
+//            if(Math.abs(pos.x() - searchedPos.x())<=1 && Math.abs(pos.y() - searchedPos.y()) <= 1) {
+//                if(pos.pawnId() != pawnId) {
+//                    neighbours.add(pos);
+//                }
+//            }
+//        }
+
+//        return new HashSet<>(neighbours);
+        //szukam pionka o podanym id
+        Set<PawnPosition>neighbours = new HashSet<>();
         for(PawnPosition pos : myPositions){
-            if(Math.abs(pos.x() - searchedPos.x())<=1 && Math.abs(pos.y() - searchedPos.y()) <= 1) {
-                if(pos.pawnId() != pawnId) {
-                    neighbours.add(pos);
+            if((pos.pawnId() - pawnId) == 0) {
+                searchedPos = new PawnPosition2D(pos.pawnId(), pos.x(), pos.y());
+            }
+        }
+
+        //System.out.println(myPositions);
+        for(PawnPosition el : myPositions) {
+            int dx = Math.abs(el.x() - searchedPos.x());
+            int dy = Math.abs(el.y() - searchedPos.y());
+
+            if (el.pawnId() == pawnId) {
+
+            } else {
+                if ((dx <= 1) & (dy <= 1)) {
+//                    System.out.println("Element: " + el + " searched pos: " + searchedPos);
+//                    System.out.println("Dx: " + dx + "Dy: " + dy);
+                    neighbours.add(el);
                 }
             }
         }

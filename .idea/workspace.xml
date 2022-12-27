@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="" />
+    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Zadanie_03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadanie_03/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Zadanie_03/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadanie_03/Meeting222.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +25,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/klaud/IdeaProjects/Java-zaj-cia-2022"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
