@@ -1,0 +1,33 @@
+Idea zadania
+Zadanie polega na utworzeniu skompresowanego pliku, który zawierać będzie komplet informacji potrzebnych do odtworzenia struktury pewnego katalogu dyskowego.
+
+Input/output
+Wejściem w przypadku kompresji jest ciąg znaków, w którym zapisana jest ścieżka do istniejącego katalogu na dysku oraz nazwa pliku wynikowego. We wskazanym katalogu mogą znajdować się inne katalogi i pliki. Struktura pod-katalogów może być dowolna.
+
+W przypadku dekompresji przekazany zostanie ciąg wskazujący na lokalizację skompresowanego pliku i miejsce jego dekompresji.
+
+Wewnętrzny format pliku wynikowego (output) zawierającego dane może być dowolny. Ważne, aby Państwa program potrafił odtworzyć oryginalny układ plików/katalogów w podanej lokalizacji.
+
+UWAGA
+W pliku należy zapisać położenie plików w formie względnej, w stosunku do katalogu, który podany zostanie jako dana wejściowa. Czyli, jeśli we wskazanym do przetworzenia katalogu A jest podkatalog B, to zapisujemy informację o B. Nowym A stanie się ścieżka podana z okazji dekompresji.
+
+Wymaga się, aby plik wynikowy był faktycznie skompresowany - proszę użyć wbudowaną w Java klasę. Nie oczekuje się znaczącej kompresji, ale, generalnie, plik wynikowy powinien być mniejszy niż rozmiar katalogu.
+
+Zapisać należy także puste pliki i katalogi.
+
+Nie wolno używać zewnętrznych narzędzi typu zip/tar.
+
+Testy będą wykonywane w środowisku Linux
+
+Prawami dostępu proszę się nie przejmować - pliki na pewno będą dały się odczytać, a do katalogów będzie można wejść. Zapis do katalogu wynikowego także będzie możliwy.
+
+UWAGA na wyjątki. Proszę zauważyć, że interfejs ich nie przewiduje!
+
+Dostarczanie rozwiązania
+Proszę o dostarczenie kodu klasy Archivizer. Klasa ma implementować interfejs ArchivizerInterface zgodnie z dokumentacją i opisem. Jeśli pojawi się w niej konstruktor, to musi on być konstruktorem bezparametrowym.
+
+
+Test
+Testu jako takiego nie ma. Państwa kod otrzymuje do archiwizacji katalog, potem zawartość archiwum jest odtwarzana. Program diff sprawdza czy są różnice. To wszystko...
+
+UWAGA: W kilku przypadkach dostarczony kod się nie kompiluje. Metody interfejsu nie zgłaszają wyjątków, wiec Państwa implementacja tego robić nie może!
