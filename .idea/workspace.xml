@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="changed name">
-      <change afterPath="$PROJECT_DIR$/Zadanie10/src/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Zadanie10/src/NetConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="connector done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,12 +64,20 @@
       <option name="project" value="LOCAL" />
       <updated>1672156447014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="connector done">
+      <created>1673027796146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673027796147</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Meeting.java - passed tests" />
     <MESSAGE value="changed name" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed name" />
+    <MESSAGE value="connector done" />
+    <option name="LAST_COMMIT_MESSAGE" value="connector done" />
   </component>
 </project>
