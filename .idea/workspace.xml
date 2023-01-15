@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="connector done">
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/Kierownik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/Opakowanie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/Pracownik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/PunktZborny.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/ThreadsHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/TimeHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/i.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA_STUDY_SESSIONS/src/o.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zadanie_07/src/FastHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Zadanie_07/src/FastHistogram.java" afterDir="false" />
-    </list>
+    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="connector done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,14 +32,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/klaudia/IdeaProjects/Java-zaj-cia-2022",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/klaudia/IdeaProjects/Java-zaj-cia-2022&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\klaud\IdeaProjects\Java-zaj-cia-2022\Zadanie_06\Zadanie06\src" />
