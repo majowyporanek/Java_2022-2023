@@ -4,7 +4,149 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="connector done" />
+    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="compress done">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/compressed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/compressed.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/decompressed/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t2/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/yx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/yy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t3/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/yx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/yy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t5/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t6/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/yx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/yy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t7/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t8/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k2/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/w" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/x" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.1/y/z/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.3/k2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.2/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/t9/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src/t1/k3/k3b.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/Archivizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Zadanie_06/Zadanie06/src/Archivizer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,22 +167,33 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2J8lxmOiJWa25aWQ1AQWaZu6G4d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/klaudia/IdeaProjects/Java-zaj-cia-2022&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06/Zadanie06/src",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Zadanie_06/Zadanie06/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\klaud\IdeaProjects\Java-zaj-cia-2022\Zadanie_06\Zadanie06\src" />
     </key>
@@ -85,10 +238,48 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="92106681-aaf0-49ce-8a29-4cacfde12e7e">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/klaudia/IdeaProjects/JavaStudySession/Java-zaj-cia-2022/Zadanie_06" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="92106681-aaf0-49ce-8a29-4cacfde12e7e" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Meeting.java - passed tests" />
     <MESSAGE value="changed name" />
     <MESSAGE value="connector done" />
-    <option name="LAST_COMMIT_MESSAGE" value="connector done" />
+    <MESSAGE value="compress done" />
+    <option name="LAST_COMMIT_MESSAGE" value="compress done" />
   </component>
 </project>
