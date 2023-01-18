@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="deleted files" />
+    <list default="true" id="2d14089e-f506-4916-a5c7-b272ed0a502f" name="Changes" comment="deleted files">
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/FastHistogram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/Histogram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
