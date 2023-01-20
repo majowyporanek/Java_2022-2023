@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public  class GUI extends JFrame {
     int N = 1;
@@ -7,14 +9,16 @@ public  class GUI extends JFrame {
     public JSlider slider;
     public JLabel labelN;
     JLabel labelK;
+    JLabel errorLabel;
     JPanel northPanel;
     JPanel southPanel;
     JTextField textFieldForK;
 
 
+
     GUI(){
         setTitle("Zadanie 09");
-        setSize(1000, 1000);
+        setSize(1000, 800);
         setLayout(new BorderLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -24,6 +28,7 @@ public  class GUI extends JFrame {
         labelN = new JLabel(); // label
         labelN.setText("N: " + N);
         styleLabels(labelN);
+
         // slider && description:
         slider = new JSlider(1, 25, 1);
         slider.addChangeListener(e -> {
@@ -39,48 +44,50 @@ public  class GUI extends JFrame {
         northPanel.add(labelN);
 
 
-
-
         // center:
         graphPanel.setPreferredSize(new Dimension((int)(getWidth()*2.0/3), (int) (getHeight() * 2.0/3)));
 
 
-
         // south:
         southPanel = new JPanel();
-        southPanel.setLayout(new GridLayout(3,1));
+        southPanel.setLayout(new GridLayout(2,1));
 
         JLabel aboutK = new JLabel();
         styleLabels(aboutK);
-        aboutK.setText("Wpisz nową wartość K z przedziału <1.0, 10.0>: ");
+        aboutK.setText("Wprowadź K należące do <1.0, 10.0>: ");
 
 
         textFieldForK = new JTextField();
         labelK = new JLabel();
         labelK.setText("K: " + K);
+        errorLabel  = new JLabel();
+        styleLabels(errorLabel);
+        errorLabel.setForeground(Color.RED);
         styleLabels(labelK);
         textFieldForK.addActionListener(e -> {
+            errorLabel.setText("");
             String kval = textFieldForK.getText();
             try {
                 K = Double.parseDouble(kval);
             }catch (NumberFormatException exception){
-                labelK.setText("K: " + "WPISANO NIEPRAWIDŁOWĄ WARTOŚĆ! PROSZĘ WPISAĆ K <1.0, 10.0>");
-
+                errorLabel.setText("Niepoprawny format!");
             }
 
             if(K>=1.0 && K<=10.0) {
                 labelK.setText("K: " + K);
                 graphPanel.repaint();
             }else {
-                labelK.setText("K: " + "WPISANO NIEPRAWIDŁOWĄ WARTOŚĆ! PROSZĘ WPISAĆ K <1.0, 10.0>");
+                errorLabel.setText("Poza akceptowalnym przedziałem!");
             }
         });
-        southPanel.add(aboutK);
-        southPanel.add(textFieldForK);
+
         southPanel.add(labelK);
+        southPanel.add(aboutK);
+        southPanel.add(errorLabel);
+        southPanel.add(textFieldForK);
 
 
-
+        // adding panels
         add(northPanel, BorderLayout.NORTH);
         add(graphPanel, BorderLayout.CENTER);
         add(southPanel, BorderLayout.SOUTH);
@@ -90,16 +97,34 @@ public  class GUI extends JFrame {
     }
 
     public void styleLabels(JLabel label){
-        label.setFont(new Font("Arial", Font.BOLD, 16));
+        label.addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                int windowWidth = getWidth();
+                int fontSize;
+                if(windowWidth > 600) {
+                    fontSize = (int) (windowWidth * 0.02);
+                }else if(windowWidth <= 600 && windowWidth > 300) {
+                    fontSize = (int) (windowWidth * 0.025);
+                }else {
+                    fontSize = (int)(windowWidth * 0.03);
+                }
+                label.setFont(new Font("Arial", Font.ITALIC, fontSize));
+            }
+        });
         label.setForeground(Color.DARK_GRAY);
     }
 
     public JPanel graphPanel = new JPanel(){
         public void paint(Graphics g) {;
             super.paint(g);
-            int width = (int)graphPanel.getWidth();
-            int height =(int)graphPanel.getHeight();
-            for (double x = 0; x < width; x+= 1.0) {
+            int width = graphPanel.getWidth();
+            int height = graphPanel.getHeight();
+            double step = 0.5;
+            if(Math.max(width, height) > 800 || K >= 4.0){
+                step = 0.2;
+            }
+            for (double x = 0; x < width; x+= step) {
                 double angle = (double) x / width * K*2 * Math.PI - K * Math.PI;
                 double sum = 0;
                 double licznik;
@@ -118,9 +143,7 @@ public  class GUI extends JFrame {
         }
     };
 
-
-
     public static void main(String[] args) {
-        GUI okienko = new GUI();
+        GUI wykres = new GUI();
     }
 }
