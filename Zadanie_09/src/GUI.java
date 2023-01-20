@@ -122,8 +122,9 @@ public  class GUI extends JFrame {
             int height = graphPanel.getHeight();
             double step = 0.5;
             if(Math.max(width, height) > 800 || K >= 4.0){
-                step = 0.2;
+                step = 0.1;
             }
+
             for (double x = 0; x < width; x+= step) {
                 double angle = (double) x / width * K*2 * Math.PI - K * Math.PI;
                 double sum = 0;
@@ -138,7 +139,11 @@ public  class GUI extends JFrame {
                 int y = (int) (height / 2 + height / 6 * sum);
                 y = height - y;
                 g.setColor(Color.magenta);
-                g.fillOval((int)x, y, 3, 3);
+                int weight = 3;
+                if(weight <300 &&  height<300){
+                    weight = 2;
+                }
+                g.fillOval((int)x, y, weight, weight);
             }
         }
     };
