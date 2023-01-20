@@ -1,0 +1,34 @@
+Zadanie 09 termin III. Do zdobycia maksymalnie: 1.0pkt.
+Idea zadania
+Zadanie polega na stworzeniu programu, który będzie rysować wykres funkcji będącej sumą funkcji sinus w postaci:
+
+
+gdzie:
+
+x ma przyjmować wartości w zakresie od -K π do +K π,
+N będzie wartością całkowitą wybieraną za pomoca suwaka (JSlider) w zakresie od 1 (wartość początkowa) do 25 włącznie.
+K będzie wartością zmiennoprzecinkową wpisywaną do pola typu JTextField. Wartości poprawne od 1.0 (wartość początkowa) do 10.0 włączenie. Uwaga: użytkownik może się pomylić i wpisać wartość niepoprawną np. "abc" - program nie może zakończyć się błędem. Odpowiedni wyjątek należy obsłużyć.
+Rozmiar okna
+Rozmiar okna nie może być stały.
+
+Wykres ma być skalowany i dostosowywać się do aktualnego rozmiaru okna. Najważniejszym elementem jest wykres - to on ma zajmować większość obszaru okna.
+
+Rozkład elementów graficznych
+Położenie elementów graficznych może być dowolne. Jedyny wymóg to czytelność.
+
+Wymagania
+Wartości N, K mają być prezentowane za pomocą pól JLabel
+Program nie może używać JavaFX
+Zamknięcie okna ma powodować zakończenie pracy programu
+Układ wspołrzędnych może (ale nie musi) być rysowany
+Wykres ma być rysowany w postaci punktów bez łączenia ich liniami.
+Liczba punktów ma zależeć od aktualnego rozmiaru okna. Im większe okno, tym więcej punktów.
+Wykres ma być czytelny. Proszę o rozsądny wybór zarówno rozmiaru punktów jak i kolorów.
+Program ma sam reagować na zmianę rozmiaru okna czy wprowadzenie przez użytkownika danych.
+Dostarczanie rozwiązania
+Proszę o dostarczenie kodu klasy GUI. Klasa ma posiadać odpowiednią do uruchomienia programu metodę main.
+
+Wykonanie polecenia:
+
+java GUI
+Ma doprowadzić do wyświetlenia okna z wykresem wygenerowanym dla danych początkowych.
