@@ -1,3 +1,4 @@
+import java.io.File;
 import java.nio.file.Path;
 import java.sql.*;
 
@@ -16,24 +17,24 @@ public class ZdaniaSQL implements GeneratorZdan {
 
     @Override
     public String zbudujZdanie(int zdanieID) {
-        String url = "klaudia";
         Connection conn = null;
         Statement stat = null;
+        String url = "jdbc:sqlite:" + this.filename.;
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite:/tmp/b7d6f964-8fd7-4059-8f87-663e48f54eb9/Z11.sql");
+            conn = DriverManager.getConnection(url);
             stat = conn.createStatement();
             String id = Integer.toString(zdanieID);
             ResultSet rs = stat.executeQuery("SELECT * FROM Zdanie where ZdanieID = " + id + ";");
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-            }
+//        } finally {
+//            if (conn != null) {
+//                try {
+//                    conn.close();
+//                } catch (SQLException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            }
         }
         return null;
     }
