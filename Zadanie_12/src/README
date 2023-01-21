@@ -1,0 +1,8 @@
+Opis zadania
+Zadanie polega na wykonaniu inspekcji nieznanej klasy. Program ma wyszukać wszystkie publiczne pola zadeklarowane w klasie, której nazwa zostanie do niego przekazana. Wynik zwracany jest w postaci kolekcji obiektów typu FieldInfo. Pola obdarzone adnotacją @FieldVersion powinny dodatkowo uzyskać informację o numerze wersji (będzie on wpisany w adnotacji). Ponieważ nie wszystkie pola będą posiadać adnotację, klasa FieldInfo posiada dwa konstruktory różniące się możliwością użycia numeru wersji.
+
+Dostarczanie rozwiązania
+Proszę dostarczyć kod źródłowy klasy FieldInspector. Ma ona implementować interfejs FieldInspectorInterface. Klasa musi posiadać konstruktor bezparametrowy - to on zostanie użyty do wytworzenia obiektu. Kodu samego interfejsu proszę nie dodawać do własnych rozwiązań.
+
+Test
+UWAGA: test jest dostępny poprzez narzędzie web
